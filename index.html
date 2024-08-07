@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مكتب العقارات XYZ</title>
+    <meta name="description" content="مكتب السلطاني | السلطاني للخدمات العقارية -  نقدم مجموعة واسعة من العقارات لتلبية احتياجاتك في  دمشق و ريف دمشق و الغوطة ، .">
+    <meta name="keywords" content="عقارات، شراء منزل، استئجار شقة، مكتب عقارات">
+    <meta name="author" content="  مكتب السلطاني للخدمات العقارية">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="  مكتب السلطاني للخدمات العقارية ">
+    <meta property="og:description" content=" مكتب السلطاني  للخدمات العقارية  - شريكك الموثوق في العثور على منزل أحلامك">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.xyzrealestate.com">
+    <meta property="og:image" content="https://www.xyzrealestate.com/logo.png">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="مكتب السلطاني للخدمات العقارية">
+    <meta name="twitter:description" content="مكتب السلطاني للخدمات العقارية - شريكك الموثوق في العثور على منزل أحلامك.">
+    <meta name="twitter:image" content="https://www.xyzrealestate.com/logo.png">
+
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "RealEstateAgent",
+        "name": "مكتب السلطاني للخدمات العقارية",
+        "image": "https://www.xyzrealestate.com/logo.png",
+        "@id": "https://www.xyzrealestate.com",
+        "url": "https://www.xyzrealestate.com",
+        "telephone": "+1234567890",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "شارع السلطاني",
+            "addressLocality": "الغوطة الشرقية ، مديرا",
+            "addressRegion": "ريف دمشق",
+            "postalCode": "",
+            "addressCountry": "سوريا"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 33.5457871,
+            "longitude": 36.3870084
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "السبت",
+                "الاحد",
+                "الاثنين",
+                "الثلاثاء",
+                "الأربعاء",
+                "الخميس",
+            ],
+            "opens": "09:00",
+            "closes": "20:00"
+        }
+    }
+    </script>
+
+    <!-- Leaflet CSS for OpenStreetMap -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    
+    <!-- Custom styles for the map -->
+    <style>
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>مرحبا بكم في مكتب السلطاني للخدمات العقارية</h1>
+    </header>
+    <main>
+        <section>
+            <h2>معلومات عنا</h2>
+            
+            
+            <p>
+               ، السلطاني هو شريكك الموثوق في العثور على منزل و احلامك و مزرعة امنياتك
+                نقدم مجموعة واسعة من كافة  العقارات لتلبية احتياجاتك في  دمشق و ريف دمشق و الغوطة الشرقية
+            </p>
+        </section>
+        <section>
+            <h2>معلومات الاتصال</h2>
+            <p>
+                
+                 
+                 
+                
+                
+                
+            </p>
+            <p>0957452232 | 0948807877</p>
+            <p>البريد الإلكتروني: <a href="mohammad.ajina.3@gmail.com">mohammad.ajina.3@gmail.com</a></p>
+        </section>
+        <section>
+            <h2>الموقع</h2>
+            <div id="map"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 مجموعة السلطاني   . جميع الحقوق محفوظة</p>
+    </footer>
+
+    <!-- Leaflet JS for OpenStreetMap -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script>
+        // Initialize the map and set its view to the real estate office's location
+        var map = L.map('map').setView([33.5457871,36.3870084], 52);
+
+        // Load and display the tile layer from OpenStreetMap
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        // Add a marker to the map at the real estate office's location
+        L.marker([33.5457871,36.3870084]).addTo(map)
+            .bindPopup('مكتب السلطاني للخدمات العقارية<br> (بلدة مديرا ، حارة السلطاني) <br> انقر للتوجه الى واتس اب <a href="https://api.whatsapp.com/send?phone=963957452232"  >0957452232</a>')
+            .openPopup();
+    </script>
+</body>
+</html>
